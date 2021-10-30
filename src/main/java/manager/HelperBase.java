@@ -12,12 +12,11 @@ public class HelperBase {
     }
 
     public boolean isElementPresent(By locator) {
-
         return wd.findElements(locator).size() > 0;
     }
 
     public void type(By locator, String text) {
-        if (text != null || text.isEmpty()) {
+        if (text != null && !text.isEmpty()) {
             WebElement el = wd.findElement(locator);
             el.click();
             el.clear();
