@@ -32,6 +32,13 @@ public class HelperUser extends HelperBase {
         submit.submit();
     }
 
+    public void submitForm() {
+        WebElement submit = wd.findElement(By.xpath("//button[@type='submit']"));
+        new WebDriverWait(wd, 10)
+                .until(ExpectedConditions.elementToBeClickable(submit));
+        submit.submit();
+    }
+
     public boolean isLogged() {
         return isElementPresent(By.xpath("//a[contains(text(),'Logout')]"));
     }
@@ -82,5 +89,13 @@ public class HelperUser extends HelperBase {
         WebElement el = wd.findElement(By.xpath("//*[@aria-modal='true']"));
         String message = el.getText();
         return message.contains("Wrong email or password");
+    }
+
+    public void login(User user ) {
+        openLoginRegistrationForm();
+        fillLoginRegistrationForm(user);
+        submitLogin();
+        clickLoggedIn();
+        pause(5000);
     }
 }
