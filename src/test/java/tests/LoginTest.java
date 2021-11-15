@@ -1,10 +1,14 @@
 package tests;
 
+import manager.NgListener;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+//@Listeners(NgListener.class)
 
 public class LoginTest extends TestBase {
 
@@ -22,12 +26,13 @@ public class LoginTest extends TestBase {
 //        }
 //    }
 
-
     @Test
     public void loginTest() {
 
         User user = new User().withEmail("rona666@mail.ru").withPassword("KoronA10!");
 
+        logger.info("Test Registration Positive starts with email--->"+user.getEmail());
+        logger.info("Test Registration Positive starts with password--->"+user.getPassword());
         app.getUser().openLoginRegistrationForm();
         //app.getUser().fillLoginRegistrationForm(email, password);
         app.getUser().fillLoginRegistrationForm(user);

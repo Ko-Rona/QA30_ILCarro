@@ -1,23 +1,17 @@
 package tests;
 
-import models.Car;
-import models.User;
-import org.openqa.selenium.By;
+import models.*;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class AddNewCarTests extends TestBase {
-    /* is logged? --- precondition
-    open form
-    fill form + model car
-    attach photo
-    submit form
-     */
+
     @BeforeMethod
     public void precondition() {
         if (app.getUser().isLoginPresent()) {
             app.getUser().login(new User().withEmail("rona666@mail.ru").withPassword("KoronA10!"));
-
         }
     }
 
@@ -86,9 +80,7 @@ public class AddNewCarTests extends TestBase {
         //app.getUser().pause(150000);
         Assert.assertTrue(app.getCar().isPopUpCarAdded());
         Assert.assertTrue(app.getCar().thisCarIsAdded(car.getMake(), car.getModel()));
-
     }
-
 
     @AfterMethod
     public void postCondition() {

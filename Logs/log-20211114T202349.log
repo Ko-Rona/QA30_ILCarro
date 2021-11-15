@@ -1,0 +1,5 @@
+20:23:53 INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+20:24:13 INFO  manager.NgListener - Start of test--->loginTest
+20:24:13 INFO  tests.TestBase - Test Registration Positive starts with email--->rona666@mail.ru
+20:24:13 INFO  tests.TestBase - Test Registration Positive starts with password--->KoronA10!
+20:24:19 INFO  manager.NgListener - Success test--->loginTest

@@ -1,0 +1,30 @@
+10:37:21 INFO  manager.ApplicationManager - Tests starts on Chrome Driver
+10:37:29 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[contains(text(),'Logout')]
+10:37:44 INFO  manager.MyListener - The element with locator-->By.xpath: //a[contains(text(),'Logout')] was found
+10:37:44 INFO  manager.NgListener - Start of test--->loginTest
+10:37:44 INFO  tests.TestBase - Test Registration Positive starts with email--->rona666@mail.ru
+10:37:44 INFO  tests.TestBase - Test Registration Positive starts with password--->KoronA10!
+10:37:44 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Log in ']
+10:37:44 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Log in '] was found
+10:37:44 INFO  manager.MyListener - Click on WebElement by Css locator-->Log in
+10:37:44 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='email']
+10:37:44 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='email'] was found
+10:37:44 INFO  manager.MyListener - Click on WebElement by Css locator-->
+10:37:44 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='password']
+10:37:44 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='password'] was found
+10:37:44 INFO  manager.MyListener - Click on WebElement by Css locator-->
+10:37:45 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+10:37:45 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+10:37:50 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .dialog-container
+10:37:50 INFO  manager.MyListener - The element with locator-->By.cssSelector: .dialog-container was found
+10:38:00 INFO  manager.NgListener - Test Failure --->org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (813299f94958db8c7b418d50fa1dd9b0)] -> css selector: .dialog-container] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LB14E35', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Inga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 813299f94958db8c7b418d50fa1dd9b0
+10:38:00 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+10:38:00 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+10:38:00 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+10:38:00 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+10:38:00 INFO  manager.MyListener - Click on WebElement by Css locator-->

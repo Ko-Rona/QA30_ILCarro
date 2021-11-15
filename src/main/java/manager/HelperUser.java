@@ -1,9 +1,8 @@
 package manager;
 
 import models.User;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -48,7 +47,6 @@ public class HelperUser extends HelperBase {
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
         return wd.findElement(By.cssSelector(".dialog-container h2")).getText().contains("success");
     }
-
 
     public void logout() {
         click(By.xpath("//a[text()=' Logout ']"));
@@ -97,5 +95,47 @@ public class HelperUser extends HelperBase {
         submitLogin();
         clickLoggedIn();
         pause(5000);
+    }
+
+    public void openRegistrationForm() {
+        click(By.xpath("//a[text()=' Sign up ']"));
+    }
+
+    public void fillRegistrationForm(User user) {
+        type(By.id("name"), user.getName());
+        type(By.id("lastName"), user.getLastName());
+        type(By.id("email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
+        //click(By.xpath("//label[contains(text(),'I agree to the')]"));
+
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click();");
+        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
+
+    }
+
+    public boolean isRegistered() {
+        WebDriverWait wait = new WebDriverWait(wd,10);
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
+        return wd.findElement(By.cssSelector(".dialog-container h1")).getText().contains("Registered");
+    }
+
+    public void checkPolicy() {
+        //click(By.xpath("//label[contains(text(),'I agree to the')]"));
+
+//        JavascriptExecutor js = (JavascriptExecutor) wd;
+//        js.executeScript("document.querySelector('#terms-of-use').click();");
+//        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
+//        click(By.id("email"));
+
+        Actions action = new Actions(wd);
+        WebElement container = wd.findElement(By.cssSelector(".checkbox-container"));
+        Rectangle rect = container.getRect();
+        //int x=rect.getX() +rect.getHeight()/10;
+        //int x=rect.getX() +2%;
+        int x=rect.getX() + 5;
+        int y=rect.getY()*(1/4*rect.getHeight());
+        action.moveByOffset(x,y).click().perform();
+
     }
 }
