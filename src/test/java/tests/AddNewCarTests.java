@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 public class AddNewCarTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition() {
         if (app.getUser().isLoginPresent()) {
             app.getUser().login(new User().withEmail("rona666@mail.ru").withPassword("KoronA10!"));
         }
     }
 
-    @Test
+    @Test(groups = {"aaa"})
     public void addNewCarTestPositive() {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
 
@@ -82,7 +82,7 @@ public class AddNewCarTests extends TestBase {
         Assert.assertTrue(app.getCar().thisCarIsAdded(car.getMake(), car.getModel()));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition() {
         app.getCar().clickButton();
         app.getUser().logout();

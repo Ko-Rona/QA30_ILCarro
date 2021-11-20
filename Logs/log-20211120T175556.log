@@ -1,0 +1,27 @@
+17:55:59 INFO  manager.ApplicationManager - Tests stars with Chrome
+17:56:11 INFO  manager.MyListener - Start search element by locator-->By.id: city
+17:56:11 INFO  manager.MyListener - The element with locator-->By.id: city was found
+17:56:11 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d5ec468c0b4e0e28ce4b8c72a0240d82)] -> id: city]
+17:56:11 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+17:56:12 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+17:56:12 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d5ec468c0b4e0e28ce4b8c72a0240d82)] -> css selector: div.pac-item]
+17:56:12 INFO  manager.MyListener - Start search element by locator-->By.id: dates
+17:56:12 INFO  manager.MyListener - The element with locator-->By.id: dates was found
+17:56:12 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d5ec468c0b4e0e28ce4b8c72a0240d82)] -> id: dates]
+17:56:12 INFO  manager.MyListener - Start search element by locator-->By.xpath: //td[@aria-label='November 25, 2021']
+17:56:12 INFO  manager.MyListener - The element with locator-->By.xpath: //td[@aria-label='November 25, 2021'] was found
+17:56:12 INFO  manager.MyListener - Start search element by locator-->By.xpath: //td[@aria-label='November 28, 2021']
+17:56:12 INFO  manager.MyListener - The element with locator-->By.xpath: //td[@aria-label='November 28, 2021'] was found
+17:56:12 INFO  manager.MyListener - Start search element by locator-->By.xpath: //td[@aria-label='November 25, 2021']
+17:56:12 INFO  manager.MyListener - The element with locator-->By.xpath: //td[@aria-label='November 25, 2021'] was found
+17:56:12 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d5ec468c0b4e0e28ce4b8c72a0240d82)] -> xpath: //td[@aria-label='November 25, 2021']]
+17:56:12 INFO  manager.MyListener - Something went wrong!!!
+17:56:12 INFO  manager.MyListener - org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LB14E35', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Inga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5ec468c0b4e0e28ce4b8c72a0240d82
+17:56:13 INFO  manager.MyListener - This link to screenshot with error --->src/test/screenshots/screenshot-3372.png

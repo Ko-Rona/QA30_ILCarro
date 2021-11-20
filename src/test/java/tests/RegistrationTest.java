@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 public class RegistrationTest extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition() {
         if (!app.getUser().isLoginPresent()) {
             app.getUser().logout();
         }
     }
 
-    @Test
+    @Test(groups = {"aaa"})
     public void registrationTestPositive() {
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
@@ -55,7 +55,7 @@ public class RegistrationTest extends TestBase{
         //Assert.assertTrue(app.getUser().isRegistered());
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
         app.getUser().clickOkButton();
     }

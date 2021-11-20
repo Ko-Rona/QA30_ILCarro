@@ -1,0 +1,132 @@
+19:19:15 INFO  manager.ApplicationManager - Tests stars with Chrome
+19:19:21 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Log in ']
+19:19:21 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Log in '] was found
+19:19:21 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Sign up ']
+19:19:21 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Sign up '] was found
+19:19:21 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //a[text()=' Sign up ']]
+19:19:21 INFO  manager.MyListener - Start search element by locator-->By.id: name
+19:19:21 INFO  manager.MyListener - The element with locator-->By.id: name was found
+19:19:21 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: name]
+19:19:22 INFO  manager.MyListener - Start search element by locator-->By.id: lastName
+19:19:22 INFO  manager.MyListener - The element with locator-->By.id: lastName was found
+19:19:22 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: lastName]
+19:19:22 INFO  manager.MyListener - Start search element by locator-->By.id: email
+19:19:22 INFO  manager.MyListener - The element with locator-->By.id: email was found
+19:19:22 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: email]
+19:19:22 INFO  manager.MyListener - Start search element by locator-->By.id: password
+19:19:22 INFO  manager.MyListener - The element with locator-->By.id: password was found
+19:19:22 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: password]
+19:19:22 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .checkbox-container
+19:19:22 INFO  manager.MyListener - The element with locator-->By.cssSelector: .checkbox-container was found
+19:19:23 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+19:19:23 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+19:19:23 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .dialog-container
+19:19:23 INFO  manager.MyListener - The element with locator-->By.cssSelector: .dialog-container was found
+19:19:24 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .dialog-container h1
+19:19:24 INFO  manager.MyListener - The element with locator-->By.cssSelector: .dialog-container h1 was found
+19:19:24 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+19:19:24 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+19:19:24 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+19:19:24 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+19:19:24 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //button[text()='Ok']]
+19:19:24 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Log in ']
+19:19:39 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Log in '] was found
+19:19:39 INFO  manager.MyListener - Start search element by locator-->By.id: 1
+19:19:39 INFO  manager.MyListener - The element with locator-->By.id: 1 was found
+19:19:39 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: 1]
+19:19:39 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: h2
+19:19:39 INFO  manager.MyListener - The element with locator-->By.cssSelector: h2 was found
+19:19:39 INFO  manager.MyListener - Start search element by locator-->By.id: pickUpPlace
+19:19:39 INFO  manager.MyListener - The element with locator-->By.id: pickUpPlace was found
+19:19:39 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: pickUpPlace]
+19:19:39 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+19:19:40 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+19:19:40 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> css selector: div.pac-item]
+19:19:45 INFO  manager.MyListener - Start search element by locator-->By.id: make
+19:19:45 INFO  manager.MyListener - The element with locator-->By.id: make was found
+19:19:45 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: make]
+19:19:45 INFO  manager.MyListener - Start search element by locator-->By.id: model
+19:19:45 INFO  manager.MyListener - The element with locator-->By.id: model was found
+19:19:45 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: model]
+19:19:45 INFO  manager.MyListener - Start search element by locator-->By.id: year
+19:19:45 INFO  manager.MyListener - The element with locator-->By.id: year was found
+19:19:45 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: year]
+19:19:45 INFO  manager.MyListener - Start search element by locator-->By.id: engine
+19:19:45 INFO  manager.MyListener - The element with locator-->By.id: engine was found
+19:19:45 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: engine]
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.id: fuel
+19:19:46 INFO  manager.MyListener - The element with locator-->By.id: fuel was found
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.xpath: .//option[@value = "Petrol"]
+19:19:46 INFO  manager.MyListener - The element with locator-->By.xpath: .//option[@value = "Petrol"] was found
+19:19:46 INFO  manager.MyListener - Click on WebElement by locator-->[[[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: fuel]] -> xpath: .//option[@value = "Petrol"]]
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.id: gear
+19:19:46 INFO  manager.MyListener - The element with locator-->By.id: gear was found
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.xpath: .//option[@value = "MT"]
+19:19:46 INFO  manager.MyListener - The element with locator-->By.xpath: .//option[@value = "MT"] was found
+19:19:46 INFO  manager.MyListener - Click on WebElement by locator-->[[[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: gear]] -> xpath: .//option[@value = "MT"]]
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.id: wheelsDrive
+19:19:46 INFO  manager.MyListener - The element with locator-->By.id: wheelsDrive was found
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.xpath: .//option[@value = "AWD"]
+19:19:46 INFO  manager.MyListener - The element with locator-->By.xpath: .//option[@value = "AWD"] was found
+19:19:46 INFO  manager.MyListener - Click on WebElement by locator-->[[[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: wheelsDrive]] -> xpath: .//option[@value = "AWD"]]
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.id: doors
+19:19:46 INFO  manager.MyListener - The element with locator-->By.id: doors was found
+19:19:46 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: doors]
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.id: seats
+19:19:46 INFO  manager.MyListener - The element with locator-->By.id: seats was found
+19:19:46 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: seats]
+19:19:46 INFO  manager.MyListener - Start search element by locator-->By.id: class
+19:19:46 INFO  manager.MyListener - The element with locator-->By.id: class was found
+19:19:47 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: class]
+19:19:47 INFO  manager.MyListener - Start search element by locator-->By.id: fuelConsumption
+19:19:47 INFO  manager.MyListener - The element with locator-->By.id: fuelConsumption was found
+19:19:47 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: fuelConsumption]
+19:19:47 INFO  manager.MyListener - Start search element by locator-->By.id: serialNumber
+19:19:47 INFO  manager.MyListener - The element with locator-->By.id: serialNumber was found
+19:19:47 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: serialNumber]
+19:19:47 INFO  manager.MyListener - Start search element by locator-->By.id: price
+19:19:47 INFO  manager.MyListener - The element with locator-->By.id: price was found
+19:19:47 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: price]
+19:19:47 INFO  manager.MyListener - Start search element by locator-->By.id: distance
+19:19:47 INFO  manager.MyListener - The element with locator-->By.id: distance was found
+19:19:47 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: distance]
+19:19:47 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .feature-input
+19:19:47 INFO  manager.MyListener - The element with locator-->By.cssSelector: .feature-input was found
+19:19:48 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> css selector: .feature-input]
+19:19:48 INFO  manager.MyListener - Start search element by locator-->By.id: about
+19:19:48 INFO  manager.MyListener - The element with locator-->By.id: about was found
+19:19:48 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> id: about]
+19:19:48 INFO  manager.MyListener - Start search element by locator-->By.id: photos
+19:19:48 INFO  manager.MyListener - The element with locator-->By.id: photos was found
+19:19:48 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+19:19:48 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+19:19:50 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .mat-dialog-container
+19:19:52 INFO  manager.MyListener - The element with locator-->By.cssSelector: .mat-dialog-container was found
+19:19:52 INFO  manager.MyListener - Start search element by locator-->By.className: message
+19:19:52 INFO  manager.MyListener - The element with locator-->By.className: message was found
+19:19:52 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Search cars']
+19:19:52 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Search cars'] was found
+19:19:52 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //button[text()='Search cars']]
+19:19:52 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Logout ']
+19:19:52 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Logout '] was found
+19:19:52 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //a[text()=' Logout ']]
+19:19:57 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[contains(text(),'Logout')]
+19:20:12 INFO  manager.MyListener - The element with locator-->By.xpath: //a[contains(text(),'Logout')] was found
+19:20:12 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Log in ']
+19:20:12 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Log in '] was found
+19:20:12 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //a[text()=' Log in ']]
+19:20:12 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='email']
+19:20:12 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='email'] was found
+19:20:12 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //input[@id='email']]
+19:20:12 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='password']
+19:20:12 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='password'] was found
+19:20:13 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //input[@id='password']]
+19:20:13 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+19:20:13 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+19:20:13 INFO  manager.MyListener - Start search element by locator-->By.xpath: //mat-dialog-container[@role='dialog']
+19:20:13 INFO  manager.MyListener - The element with locator-->By.xpath: //mat-dialog-container[@role='dialog'] was found
+19:20:13 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+19:20:13 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+19:20:13 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+19:20:13 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+19:20:13 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (f704cc83e9962e486e3cde885c60bccc)] -> xpath: //button[text()='Ok']]

@@ -1,0 +1,10 @@
+18:00:40 INFO  manager.ApplicationManager - Tests stars with Chrome
+18:00:45 INFO  manager.MyListener - Start search element by locator-->By.id: city
+18:00:45 INFO  manager.MyListener - The element with locator-->By.id: city was found
+18:00:45 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (076f80a4e93d3cde45f909b1c77d1fe2)] -> id: city]
+18:00:45 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+18:00:46 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+18:00:46 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (076f80a4e93d3cde45f909b1c77d1fe2)] -> css selector: div.pac-item]
+18:00:46 INFO  manager.MyListener - Start search element by locator-->By.id: dates
+18:00:46 INFO  manager.MyListener - The element with locator-->By.id: dates was found
+18:00:46 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (076f80a4e93d3cde45f909b1c77d1fe2)] -> id: dates]

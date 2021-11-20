@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 
 public class CarHelper extends HelperBase{
     public CarHelper(WebDriver wd) {
@@ -53,7 +55,6 @@ public class CarHelper extends HelperBase{
         type(By.id("pickUpPlace"), address);
         click(By.cssSelector("div.pac-item"));
         pause(5000);
-
     }
 
     private boolean isCarCreationFormPresent() {
@@ -83,5 +84,54 @@ public class CarHelper extends HelperBase{
 
     public void clickButton() {
         click(By.xpath("//button[text()='Search cars']"));
+    }
+
+    public void fillFindForm() {
+        typeCity("city", "Haifa");
+        typeDates("dates", "12/14/2021 - 12/21/2021");
+    }
+
+    private void typeDates(String locator, String dates) {
+        type(By.id(locator), dates);
+    }
+
+    private void typeCity(String locator, String city) {
+        type(By.id(locator), city);
+        click(By.cssSelector("div.pac-item"));
+    }
+
+
+    public boolean isSearchResults() {
+        return isElementPresent(By.cssSelector(".search-results"));
+    }
+
+    public void fillCarForm2() {
+        typeCity("city", "Haifa");
+        selectDates("dates", "25-28");
+    }
+
+    private void selectDates(String locator, String dates) {
+
+        String [] data = dates.split("-");
+        click(By.id(locator));
+
+        String locator1 = String.format("//td[@aria-label='November %s, 2021']", data[0]);
+        String locator2 = String.format("//td[@aria-label='November %s, 2021']", data[1]);
+
+        WebElement el1 = wd.findElement(By.xpath(locator1));
+
+        if(el1.isEnabled()){
+            (el1.findElement(By.xpath("*"))).click();
+            pause(2000);
+        }else{
+            return;
+        }
+
+        WebElement el2 = wd.findElement(By.xpath(locator2));
+        if(el2.isEnabled()){
+            (el2.findElement(By.xpath("*"))).click();
+        }else{
+            return;
+        }
     }
 }

@@ -1,0 +1,23 @@
+18:03:58 INFO  manager.ApplicationManager - Tests stars with Chrome
+18:04:17 INFO  manager.MyListener - Start search element by locator-->By.id: city
+18:04:17 INFO  manager.MyListener - The element with locator-->By.id: city was found
+18:04:17 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (7cd54c6d8a9ef70b94a8bf76987a9cc8)] -> id: city]
+18:04:17 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+18:04:18 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+18:04:18 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (7cd54c6d8a9ef70b94a8bf76987a9cc8)] -> css selector: div.pac-item]
+18:04:18 INFO  manager.MyListener - Start search element by locator-->By.id: dates
+18:04:18 INFO  manager.MyListener - The element with locator-->By.id: dates was found
+18:04:18 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (7cd54c6d8a9ef70b94a8bf76987a9cc8)] -> id: dates]
+18:04:18 INFO  manager.MyListener - Start search element by locator-->By.xpath: //td[@aria-label='November 25, 2021'] //div[@class='mat-calendar-body-cell-content'] ]
+18:04:18 INFO  manager.MyListener - Something went wrong!!!
+18:04:18 INFO  manager.MyListener - org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //td[@aria-label='November 25, 2021'] //div[@class='mat-calendar-body-cell-content'] ] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//td[@aria-label='November 25, 2021'] //div[@class='mat-calendar-body-cell-content'] ]' is not a valid XPath expression.
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LB14E35', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Inga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58841}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7cd54c6d8a9ef70b94a8bf76987a9cc8
+*** Element info: {Using=xpath, value=//td[@aria-label='November 25, 2021'] //div[@class='mat-calendar-body-cell-content'] ]}
+18:04:19 INFO  manager.MyListener - This link to screenshot with error --->src/test/screenshots/screenshot-258.png

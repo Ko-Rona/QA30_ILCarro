@@ -1,0 +1,23 @@
+19:06:42 INFO  manager.ApplicationManager - Tests stars with Chrome
+19:06:47 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[contains(text(),'Logout')]
+19:07:02 INFO  manager.MyListener - The element with locator-->By.xpath: //a[contains(text(),'Logout')] was found
+19:07:02 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Log in ']
+19:07:02 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Log in '] was found
+19:07:02 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d1488d0fe1513a7e3aced16bc20cd0b8)] -> xpath: //a[text()=' Log in ']]
+19:07:02 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='email']
+19:07:02 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='email'] was found
+19:07:02 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d1488d0fe1513a7e3aced16bc20cd0b8)] -> xpath: //input[@id='email']]
+19:07:02 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='password']
+19:07:02 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='password'] was found
+19:07:02 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d1488d0fe1513a7e3aced16bc20cd0b8)] -> xpath: //input[@id='password']]
+19:07:02 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+19:07:02 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+19:07:02 INFO  manager.MyListener - Start search element by locator-->By.xpath: //mat-dialog-container[@role='dialog']
+19:07:03 INFO  manager.MyListener - The element with locator-->By.xpath: //mat-dialog-container[@role='dialog'] was found
+19:07:03 INFO  manager.MyListener - Start search element by locator-->By.xpath: //*[@aria-modal='true']
+19:07:03 INFO  manager.MyListener - The element with locator-->By.xpath: //*[@aria-modal='true'] was found
+19:07:03 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+19:07:03 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+19:07:03 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+19:07:03 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+19:07:03 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (d1488d0fe1513a7e3aced16bc20cd0b8)] -> xpath: //button[text()='Ok']]

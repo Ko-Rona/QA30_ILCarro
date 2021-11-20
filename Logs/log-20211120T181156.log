@@ -1,0 +1,27 @@
+18:11:59 INFO  manager.ApplicationManager - Tests stars with Chrome
+18:12:07 INFO  manager.MyListener - Start search element by locator-->By.id: city
+18:12:07 INFO  manager.MyListener - The element with locator-->By.id: city was found
+18:12:07 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (7dee5b3f18b66f21072d314d1ac376b9)] -> id: city]
+18:12:07 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+18:12:08 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+18:12:08 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (7dee5b3f18b66f21072d314d1ac376b9)] -> css selector: div.pac-item]
+18:12:08 INFO  manager.MyListener - Start search element by locator-->By.id: dates
+18:12:08 INFO  manager.MyListener - The element with locator-->By.id: dates was found
+18:12:08 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (7dee5b3f18b66f21072d314d1ac376b9)] -> id: dates]
+18:12:08 INFO  manager.MyListener - Start search element by locator-->By.xpath: //td[@aria-label='November 25, 2021'] //div[@class='mat-calendar-body-cell-content']
+18:12:08 INFO  manager.MyListener - The element with locator-->By.xpath: //td[@aria-label='November 25, 2021'] //div[@class='mat-calendar-body-cell-content'] was found
+18:12:08 INFO  manager.MyListener - Start search element by locator-->By.xpath: //td[@aria-label='November 28, 2021'] //div[@class='mat-calendar-body-cell-content']
+18:12:08 INFO  manager.MyListener - The element with locator-->By.xpath: //td[@aria-label='November 28, 2021'] //div[@class='mat-calendar-body-cell-content'] was found
+18:12:08 INFO  manager.MyListener - Start search element by locator-->By.xpath: .child::*
+18:12:08 INFO  manager.MyListener - Something went wrong!!!
+18:12:08 INFO  manager.MyListener - org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .child::* because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '.child::*' is not a valid XPath expression.
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LB14E35', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Inga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7dee5b3f18b66f21072d314d1ac376b9
+*** Element info: {Using=xpath, value=.child::*}
+18:12:09 INFO  manager.MyListener - This link to screenshot with error --->src/test/screenshots/screenshot-728.png

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (app.getUser().isLogged()) {
             app.getUser().logout();
@@ -26,7 +26,7 @@ public class LoginTest extends TestBase {
 //        }
 //    }
 
-    @Test
+    @Test(groups = {"aaa"})
     public void loginTest() {
 
         User user = new User().withEmail("rona666@mail.ru").withPassword("KoronA10!");
@@ -76,7 +76,7 @@ public class LoginTest extends TestBase {
     }
 
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition () {
         app.getUser().clickOkButton();
     }
