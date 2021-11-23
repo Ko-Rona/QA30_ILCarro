@@ -20,6 +20,6 @@ public class TestBase {
 
     @AfterSuite(alwaysRun = true)
     public void tearDown() {
-         app.stop();
+        app.stop();
     }
 }

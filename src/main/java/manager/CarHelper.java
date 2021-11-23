@@ -2,16 +2,17 @@ package manager;
 
 import models.Car;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
+import java.time.LocalDate;
 
 
-public class CarHelper extends HelperBase{
+public class CarHelper extends HelperBase {
     public CarHelper(WebDriver wd) {
         super(wd);
     }
@@ -21,7 +22,7 @@ public class CarHelper extends HelperBase{
     }
 
     public void fillCarForm(Car car) {
-        if(isCarCreationFormPresent()){
+        if (isCarCreationFormPresent()) {
             typeLocation(car.getAddress());
             type(By.id("make"), car.getMake());
             type(By.id("model"), car.getModel());
@@ -39,7 +40,7 @@ public class CarHelper extends HelperBase{
             type(By.id("serialNumber"), car.getCarRegNumber());
             type(By.id("price"), car.getPrice());
             type(By.id("distance"), car.getDistanceIncluded());
-            type(By.cssSelector(".feature-input"),car.getTypeFeature());
+            type(By.cssSelector(".feature-input"), car.getTypeFeature());
             type(By.id("about"), car.getAbout());
 
         }
@@ -66,8 +67,8 @@ public class CarHelper extends HelperBase{
     }
 
     public void attachedPhoto(String path) {
-    wd.findElement(By.id("photos"))
-            .sendKeys(path);
+        wd.findElement(By.id("photos"))
+                .sendKeys(path);
     }
 
     public boolean isPopUpCarAdded() {
@@ -92,7 +93,18 @@ public class CarHelper extends HelperBase{
     }
 
     private void typeDates(String locator, String dates) {
-        type(By.id(locator), dates);
+        WebElement form = wd.findElement(By.id(locator));
+        String os = System.getProperty("os.name");
+        System.out.println(os);
+
+        if (os.startsWith("Mac")) {
+            form.sendKeys(Keys.chord(Keys.COMMAND, "a"));
+        } else {
+            form.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+
+        }
+        form.sendKeys(dates);
+        form.sendKeys(Keys.ENTER);
     }
 
     private void typeCity(String locator, String city) {
@@ -112,7 +124,7 @@ public class CarHelper extends HelperBase{
 
     private void selectDates(String locator, String dates) {
 
-        String [] data = dates.split("-");
+        String[] data = dates.split("-");
         click(By.id(locator));
 
         String locator1 = String.format("//td[@aria-label='November %s, 2021']", data[0]);
@@ -120,18 +132,92 @@ public class CarHelper extends HelperBase{
 
         WebElement el1 = wd.findElement(By.xpath(locator1));
 
-        if(el1.isEnabled()){
+        if (el1.isEnabled()) {
             (el1.findElement(By.xpath("*"))).click();
             pause(2000);
-        }else{
+        } else {
             return;
         }
 
         WebElement el2 = wd.findElement(By.xpath(locator2));
-        if(el2.isEnabled()){
+        if (el2.isEnabled()) {
             (el2.findElement(By.xpath("*"))).click();
-        }else{
+        } else {
             return;
         }
+    }
+
+    public void fillSearchForm(String city, String from, String to) {
+        typeCity("city", city);
+        selectPeriod(from, to);
+    }
+
+//    private void selectPeriod(String from, String to) {
+//        String[] dataFrom = from.split("/");
+//        String[] dataTo = to.split("/");
+//        click(By.id("dates"));
+//
+//        int diffStart = 0;
+//        if (LocalDate.now().getMonthValue() != Integer.parseInt(dataFrom[0])) {
+//            diffStart = Integer.parseInt(dataFrom[0]) - LocalDate.now().getMonthValue();
+//        }
+//
+//        int diff = 0;
+//        if (Integer.parseInt(dataFrom[0]) != Integer.parseInt(dataTo[0])) {
+//            diff = Integer.parseInt(dataTo[0]) - Integer.parseInt(dataFrom[0]);
+//        }
+//
+//        for (int i = 0; i < diffStart; i++) {
+//            click(By.xpath("//button[@aria-label='Next month']"));
+//        }
+//
+//        String locator3 = String.format("//div[.=' %s ']", dataFrom[1]);
+//        click(By.xpath(locator3));
+//
+//        for (int i = 0; i < diff; i++) {
+//            click(By.xpath("//button[@aria-label='Next month']"));
+//        }
+//
+//        String locator4 = String.format("//div[.=' %s ']", dataTo[1]);
+//        click(By.xpath(locator4));
+//    }
+
+    private void selectPeriod(String from, String to) {
+
+        String[] dataFrom = from.split("/");
+        String[] dataTo = to.split("/");
+        click(By.id("dates"));
+
+        int diffStart = 0;
+        if (LocalDate.now().getMonthValue() != Integer.parseInt(dataFrom[0])) {
+            diffStart = Integer.parseInt(dataFrom[0]) - LocalDate.now().getMonthValue();
+            if (diffStart < 0) {
+                diffStart = diffStart + 12;
+            }
+        }
+
+        int diff = 0;
+        if (Integer.parseInt(dataFrom[0]) != Integer.parseInt(dataTo[0])) {
+            diff = Integer.parseInt(dataTo[0]) - Integer.parseInt(dataFrom[0]);
+            if (diff < 0) {
+                diff = diff + 12;
+            }
+        }
+
+        for (int i = 0; i < diffStart; i++) {
+            click(By.xpath("//button[@aria-label='Next month']"));
+        }
+        String locator3 = String.format("//div[.=' %s ']", dataFrom[1]);
+        click(By.xpath(locator3));
+
+        for (int i = 0; i < diff; i++) {
+            click(By.xpath("//button[@aria-label='Next month']"));
+        }
+        String locator4 = String.format("//div[.=' %s ']", dataTo[1]);
+        click(By.xpath(locator4));
+    }
+
+    public boolean isListOfCarsAppeared() {
+        return isElementPresent(By.cssSelector(".cars-container"));
     }
 }

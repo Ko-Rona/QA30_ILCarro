@@ -1,12 +1,13 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class RegistrationTest extends TestBase{
+public class RegistrationTest extends TestBase {
 
     @BeforeMethod(alwaysRun = true)
     public void precondition() {
@@ -15,16 +16,15 @@ public class RegistrationTest extends TestBase{
         }
     }
 
-    @Test(groups = {"aaa"})
-    public void registrationTestPositive() {
+    @Test(dataProvider = "registrationModelDto", dataProviderClass = MyDataProvider.class)
+    public void registrationTestPositive(User user) {
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
-
-        User user = new User()
-                .withName("Renata")
-                .withLastName("Finkel")
-                .withEmail("rona" + i + "@gmail.com")
-                .withPassword("RrRrRr12$");
+//        User user = new User()
+//                .withName("Renata")
+//                .withLastName("Finkel")
+//                .withEmail("rona" + i + "@gmail.com")
+//                .withPassword("RrRrRr12$");
 
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
@@ -56,7 +56,7 @@ public class RegistrationTest extends TestBase{
     }
 
     @AfterMethod(alwaysRun = true)
-    public void postCondition(){
+    public void postCondition() {
         app.getUser().clickOkButton();
     }
 }

@@ -1,0 +1,50 @@
+19:57:09 INFO  manager.ApplicationManager - Tests stars with Chrome
+19:57:32 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .logo
+19:57:32 INFO  manager.MyListener - The element with locator-->By.cssSelector: .logo was found
+19:57:32 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> css selector: .logo]
+19:57:32 INFO  manager.MyListener - Start search element by locator-->By.id: city
+19:57:32 INFO  manager.MyListener - The element with locator-->By.id: city was found
+19:57:33 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> id: city]
+19:57:33 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+19:57:33 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+19:57:33 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> css selector: div.pac-item]
+19:57:33 INFO  manager.MyListener - Start search element by locator-->By.id: dates
+19:57:33 INFO  manager.MyListener - The element with locator-->By.id: dates was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> id: dates]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //div[.=' 25 ']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //div[.=' 25 '] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //div[.=' 25 ']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:34 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:34 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:34 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:35 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:35 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:35 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:35 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:35 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@aria-label='Next month']
+19:57:35 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@aria-label='Next month'] was found
+19:57:35 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //button[@aria-label='Next month']]
+19:57:35 INFO  manager.MyListener - Start search element by locator-->By.xpath: //div[.=' 26 ']
+19:57:35 INFO  manager.MyListener - The element with locator-->By.xpath: //div[.=' 26 '] was found
+19:57:35 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (fc1ab36e8ec35a2a5a067ccb2785a3d2)] -> xpath: //div[.=' 26 ']]
+19:57:35 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+19:57:35 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+19:57:35 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .cars-container
+19:57:39 INFO  manager.MyListener - The element with locator-->By.cssSelector: .cars-container was found

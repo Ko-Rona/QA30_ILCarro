@@ -1,0 +1,21 @@
+20:54:41 INFO  manager.ApplicationManager - Tests stars with Chrome
+20:54:45 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[contains(text(),'Logout')]
+20:55:00 INFO  manager.MyListener - The element with locator-->By.xpath: //a[contains(text(),'Logout')] was found
+20:55:00 INFO  tests.TestBase - Test Registration Positive starts with email--->rona@666mail.ru
+20:55:00 INFO  tests.TestBase - Test Registration Positive starts with password--->KoronA10!
+20:55:00 INFO  manager.MyListener - Start search element by locator-->By.xpath: //a[text()=' Log in ']
+20:55:00 INFO  manager.MyListener - The element with locator-->By.xpath: //a[text()=' Log in '] was found
+20:55:00 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (3f93a3c8832f04cb94d578db3653bb43)] -> xpath: //a[text()=' Log in ']]
+20:55:00 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='email']
+20:55:00 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='email'] was found
+20:55:00 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (3f93a3c8832f04cb94d578db3653bb43)] -> xpath: //input[@id='email']]
+20:55:00 INFO  manager.MyListener - Start search element by locator-->By.xpath: //input[@id='password']
+20:55:00 INFO  manager.MyListener - The element with locator-->By.xpath: //input[@id='password'] was found
+20:55:01 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (3f93a3c8832f04cb94d578db3653bb43)] -> xpath: //input[@id='password']]
+20:55:01 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+20:55:01 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+20:55:06 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+20:55:16 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+20:55:16 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[text()='Ok']
+20:55:16 INFO  manager.MyListener - The element with locator-->By.xpath: //button[text()='Ok'] was found
+20:55:16 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (3f93a3c8832f04cb94d578db3653bb43)] -> xpath: //button[text()='Ok']]

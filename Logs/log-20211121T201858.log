@@ -1,0 +1,27 @@
+20:19:01 INFO  manager.ApplicationManager - Tests stars with Chrome
+20:19:05 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .logo
+20:19:05 INFO  manager.MyListener - The element with locator-->By.cssSelector: .logo was found
+20:19:05 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (19c585387f9478478d7dde6e7a1edd2d)] -> css selector: .logo]
+20:19:06 INFO  manager.MyListener - Start search element by locator-->By.id: city
+20:19:06 INFO  manager.MyListener - The element with locator-->By.id: city was found
+20:19:06 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (19c585387f9478478d7dde6e7a1edd2d)] -> id: city]
+20:19:06 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: div.pac-item
+20:19:06 INFO  manager.MyListener - The element with locator-->By.cssSelector: div.pac-item was found
+20:19:07 INFO  manager.MyListener - Click on WebElement by locator-->[[ChromeDriver: chrome on WINDOWS (19c585387f9478478d7dde6e7a1edd2d)] -> css selector: div.pac-item]
+20:19:07 INFO  manager.MyListener - Start search element by locator-->By.id: dates
+20:19:07 INFO  manager.MyListener - The element with locator-->By.id: dates was found
+20:19:07 INFO  manager.MyListener - Start search element by locator-->By.xpath: //button[@type='submit']
+20:19:07 INFO  manager.MyListener - The element with locator-->By.xpath: //button[@type='submit'] was found
+20:19:08 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .search-results
+20:19:08 INFO  manager.MyListener - The element with locator-->By.cssSelector: .search-results was found
+20:19:08 INFO  manager.MyListener - Start search element by locator-->By.cssSelector: .logo
+20:19:08 INFO  manager.MyListener - The element with locator-->By.cssSelector: .logo was found
+20:19:23 INFO  manager.MyListener - Something went wrong!!!
+20:19:23 INFO  manager.MyListener - org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LB14E35', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Inga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19c585387f9478478d7dde6e7a1edd2d
+20:19:23 INFO  manager.MyListener - This link to screenshot with error --->src/test/screenshots/screenshot-1163.png

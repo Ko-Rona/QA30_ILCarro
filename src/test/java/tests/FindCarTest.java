@@ -1,10 +1,8 @@
 package tests;
 
-import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class FindCarTest extends TestBase {
 
@@ -22,5 +20,18 @@ public class FindCarTest extends TestBase {
         app.getUser().submitForm();
 
         Assert.assertTrue(app.getCar().isSearchResults());
+    }
+
+    @Test
+    public void findCarTest3() {
+        app.getCar().fillSearchForm("Haifa", "11/25/2021", "8/26/2022");
+        app.getUser().submitForm();
+
+        Assert.assertTrue(app.getCar().isListOfCarsAppeared());
+    }
+
+    @BeforeMethod
+    public void post() {
+        app.getUser().click(By.cssSelector(".logo"));
     }
 }

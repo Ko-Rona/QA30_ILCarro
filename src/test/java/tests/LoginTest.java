@@ -1,11 +1,10 @@
 package tests;
 
-import manager.NgListener;
+import manager.MyDataProvider;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //@Listeners(NgListener.class)
@@ -26,20 +25,19 @@ public class LoginTest extends TestBase {
 //        }
 //    }
 
-    @Test(groups = {"aaa"})
-    public void loginTest() {
+    @Test(dataProvider = "loginModelDto", dataProviderClass = MyDataProvider.class)
+    public void loginTest(User user) {
 
-        User user = new User().withEmail("rona666@mail.ru").withPassword("KoronA10!");
+        //User user = new User().withEmail("rona666@mail.ru").withPassword("KoronA10!");
 
-        logger.info("Test Registration Positive starts with email--->"+user.getEmail());
-        logger.info("Test Registration Positive starts with password--->"+user.getPassword());
+        logger.info("Test Registration Positive starts with user--->"+user.toString());
         app.getUser().openLoginRegistrationForm();
         //app.getUser().fillLoginRegistrationForm(email, password);
         app.getUser().fillLoginRegistrationForm(user);
         app.getUser().submitLogin();
         app.getUser().pause(5000);
 
-        Assert.assertTrue(app.getUser().isLoggedSuccess());
+        //Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
 
 
@@ -75,10 +73,17 @@ public class LoginTest extends TestBase {
         Assert.assertTrue(app.getUser().isErrorMessageWrongEmail());
     }
 
+    @Test(dataProvider = "loginDto", dataProviderClass = MyDataProvider.class)
+    public void testLoginWithString(String email, String password){
+       logger.info("Start with email--->" + email + "With password--->" + password);
+        app.getUser().openLoginRegistrationForm();
+        app.getUser().fillLoginRegistrationForm(email, password);
+        app.getUser().submitForm();
+        //Assert.assertTrue(app.getUser().isLoggedSuccess());
+    }
 
     @AfterMethod(alwaysRun = true)
     public void postCondition () {
         app.getUser().clickOkButton();
     }
-
 }

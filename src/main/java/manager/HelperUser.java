@@ -43,7 +43,7 @@ public class HelperUser extends HelperBase {
     }
 
     public boolean isLoggedSuccess() {
-        WebDriverWait wait = new WebDriverWait(wd,10);
+        WebDriverWait wait = new WebDriverWait(wd, 10);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
         return wd.findElement(By.cssSelector(".dialog-container h2")).getText().contains("success");
     }
@@ -89,7 +89,7 @@ public class HelperUser extends HelperBase {
         return message.contains("Wrong email or password");
     }
 
-    public void login(User user ) {
+    public void login(User user) {
         openLoginRegistrationForm();
         fillLoginRegistrationForm(user);
         submitLogin();
@@ -111,11 +111,10 @@ public class HelperUser extends HelperBase {
         JavascriptExecutor js = (JavascriptExecutor) wd;
         js.executeScript("document.querySelector('#terms-of-use').click();");
         js.executeScript("document.querySelector('#terms-of-use').checked=true;");
-
     }
 
     public boolean isRegistered() {
-        WebDriverWait wait = new WebDriverWait(wd,10);
+        WebDriverWait wait = new WebDriverWait(wd, 10);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
         return wd.findElement(By.cssSelector(".dialog-container h1")).getText().contains("Registered");
     }
@@ -133,9 +132,8 @@ public class HelperUser extends HelperBase {
         Rectangle rect = container.getRect();
         //int x=rect.getX() +rect.getHeight()/10;
         //int x=rect.getX() +2%;
-        int x=rect.getX() + 5;
-        int y=rect.getY()*(1/4*rect.getHeight());
-        action.moveByOffset(x,y).click().perform();
-
+        int x = rect.getX() + 5;
+        int y = rect.getY() * (1 / 4 * rect.getHeight());
+        action.moveByOffset(x, y).click().perform();
     }
 }
