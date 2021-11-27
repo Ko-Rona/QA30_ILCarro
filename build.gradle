@@ -42,13 +42,18 @@ task reg(type: Test) {
         if (suite.equals('login')) {
             suites 'src/test/resources/login.xml'
         } else if (suite.equals('testng')) {
-            suites 'src/test/resources/testng.xml'
-        } else {
             suites 'src/test/resources/groups.xml'
+        } else {
+            suites 'src/test/resources/testng.xml'
         }
 
         if (project.hasProperty('browser')) {
             systemProperty 'browser', "${browser}"
         }
+
+        if (project.hasProperty('target')) {
+            systemProperty 'target', "${target}"
+        }
+
     }
 }

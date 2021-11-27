@@ -16,7 +16,8 @@ public class RegistrationTest extends TestBase {
         }
     }
 
-    @Test(dataProvider = "registrationModelDto", dataProviderClass = MyDataProvider.class)
+//    @Test(dataProvider = "registrationModelDto", dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "registrationCSV", dataProviderClass = MyDataProvider.class)
     public void registrationTestPositive(User user) {
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
@@ -42,17 +43,13 @@ public class RegistrationTest extends TestBase {
         User user = new User()
                 .withName("Renata")
                 .withLastName("Finkel")
-                .withEmail("rona" + i + "@gmail.com")
-                .withPassword("gjf");
+                .withEmail("ronagmail.com")
+                .withPassword("HgHg15!!h");
 
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
         app.getUser().checkPolicy();
 
-        app.getUser().submitForm();
-        app.getUser().pause(100000);
-
-        //Assert.assertTrue(app.getUser().isRegistered());
     }
 
     @AfterMethod(alwaysRun = true)

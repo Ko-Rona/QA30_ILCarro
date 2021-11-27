@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 
 public class CarHelper extends HelperBase {
@@ -107,7 +108,7 @@ public class CarHelper extends HelperBase {
         form.sendKeys(Keys.ENTER);
     }
 
-    private void typeCity(String locator, String city) {
+    public void typeCity(String locator, String city) {
         type(By.id(locator), city);
         click(By.cssSelector("div.pac-item"));
     }
@@ -119,7 +120,7 @@ public class CarHelper extends HelperBase {
 
     public void fillCarForm2() {
         typeCity("city", "Haifa");
-        selectDates("dates", "25-28");
+        selectDates("dates", "29-30");
     }
 
     private void selectDates(String locator, String dates) {
@@ -215,6 +216,37 @@ public class CarHelper extends HelperBase {
         }
         String locator4 = String.format("//div[.=' %s ']", dataTo[1]);
         click(By.xpath(locator4));
+    }
+
+    public void selectPeriodNew(String fromD, String toD) {
+        LocalDate from = LocalDate.parse(fromD, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        LocalDate to = LocalDate.parse(toD, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        LocalDate now = LocalDate.now();
+        click(By.id("dates"));
+
+        selectData(from, now);
+//        int monthDiff = from.getYear()-now.getYear()==0 ? from.getMonthValue()-now.getMonthValue()
+//                : 12-now.getMonthValue()+from.getMonthValue();
+//        for (int i = 0; i < monthDiff; i++) {
+//            click(By.xpath("//button[@aria-label='Next month']"));
+//        }
+        click(By.xpath(String.format("//div[.=' %s ']", from.getDayOfMonth())));
+        selectData(to, from);
+//        monthDiff = to.getYear()-from.getYear() == 0? to.getMonthValue() - from.getMonthValue()
+//                : 12 - from.getMonthValue()+to.getMonthValue();
+//        for (int i = 0; i < monthDiff; i++) {
+//            click(By.xpath("//button[@aria-label='Next month']"));
+//        }
+        click(By.xpath(String.format("//div[.=' %s ']", to.getDayOfMonth())));
+
+    }
+
+    private void selectData(LocalDate first, LocalDate second) {
+        int monthDiff = first.getYear() - second.getYear() == 0 ? first.getMonthValue() - second.getMonthValue()
+                : 12 - second.getMonthValue() + first.getMonthValue();
+        for (int i = 0; i < monthDiff; i++) {
+            click(By.xpath("//button[@aria-label='Next month']"));
+        }
     }
 
     public boolean isListOfCarsAppeared() {

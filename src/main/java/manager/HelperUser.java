@@ -43,7 +43,7 @@ public class HelperUser extends HelperBase {
     }
 
     public boolean isLoggedSuccess() {
-        WebDriverWait wait = new WebDriverWait(wd, 10);
+        WebDriverWait wait = new WebDriverWait(wd, 5);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
         return wd.findElement(By.cssSelector(".dialog-container h2")).getText().contains("success");
     }
@@ -119,21 +119,30 @@ public class HelperUser extends HelperBase {
         return wd.findElement(By.cssSelector(".dialog-container h1")).getText().contains("Registered");
     }
 
+    public void returnToStart() {
+        click(By.cssSelector(".logo"));
+        pause(1000);
+    }
+
     public void checkPolicy() {
-        //click(By.xpath("//label[contains(text(),'I agree to the')]"));
+//        boolean isSelected = wd.findElement(By.id("terms-of-use")).isSelected();
+//        if(!isSelected()){
+//            click(By.xpath("//label[contains(text(),'I agree to the')]"));
+//        }
+        click(By.cssSelector("label[for='terms-of-use']"));
 
-//        JavascriptExecutor js = (JavascriptExecutor) wd;
-//        js.executeScript("document.querySelector('#terms-of-use').click();");
-//        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
-//        click(By.id("email"));
-
-        Actions action = new Actions(wd);
-        WebElement container = wd.findElement(By.cssSelector(".checkbox-container"));
-        Rectangle rect = container.getRect();
-        //int x=rect.getX() +rect.getHeight()/10;
-        //int x=rect.getX() +2%;
-        int x = rect.getX() + 5;
-        int y = rect.getY() * (1 / 4 * rect.getHeight());
-        action.moveByOffset(x, y).click().perform();
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click();");
+        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
+        //click(By.id("email"));
+//
+//        Actions action = new Actions(wd);
+//        WebElement container = wd.findElement(By.cssSelector(".checkbox-container"));
+//        Rectangle rect = container.getRect();
+//        //int x=rect.getX() +rect.getHeight()/10;
+//        //int x=rect.getX() +2%;
+//        int x = rect.getX() + 3;
+//        int y = rect.getY() * (1 / 6 * rect.getHeight());
+//        action.moveByOffset(x, y).click().perform();
     }
 }

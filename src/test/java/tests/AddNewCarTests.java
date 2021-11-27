@@ -11,7 +11,7 @@ public class AddNewCarTests extends TestBase {
     @BeforeMethod(alwaysRun = true)
     public void precondition() {
         if (app.getUser().isLoginPresent()) {
-            app.getUser().login(new User().withEmail("rona666@mail.ru").withPassword("KoronA10!"));
+            app.getUser().login(new User().withEmail(app.email()).withPassword(app.password()));
         }
     }
 
@@ -42,7 +42,6 @@ public class AddNewCarTests extends TestBase {
         app.getCar().fillCarForm(car);
         app.getCar().attachedPhoto("E:\\QA30\\QA30_ILCarro\\2021_land-rover_range-rover-sport_4dr-suv_p400-hst_fq_oem_10_815.jpg");
         app.getUser().submitForm();
-
 
         Assert.assertTrue(app.getCar().isPopUpCarAdded());
         Assert.assertTrue(app.getCar().thisCarIsAdded(car.getMake(), car.getModel()));
@@ -77,7 +76,7 @@ public class AddNewCarTests extends TestBase {
         app.getCar().attachedPhoto("E:\\QA30\\QA30_ILCarro\\auto.jpeg");
         app.getUser().submitForm();
 
-        //app.getUser().pause(150000);
+        app.getUser().pause(3000);
         Assert.assertTrue(app.getCar().isPopUpCarAdded());
         Assert.assertTrue(app.getCar().thisCarIsAdded(car.getMake(), car.getModel()));
     }

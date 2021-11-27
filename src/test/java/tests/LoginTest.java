@@ -35,11 +35,10 @@ public class LoginTest extends TestBase {
         //app.getUser().fillLoginRegistrationForm(email, password);
         app.getUser().fillLoginRegistrationForm(user);
         app.getUser().submitLogin();
-        app.getUser().pause(5000);
+        app.getUser().pause(2000);
 
-        //Assert.assertTrue(app.getUser().isLoggedSuccess());
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
-
 
     @Test
     public void loginTestWrongEmail() {
@@ -79,7 +78,8 @@ public class LoginTest extends TestBase {
         app.getUser().openLoginRegistrationForm();
         app.getUser().fillLoginRegistrationForm(email, password);
         app.getUser().submitForm();
-        //Assert.assertTrue(app.getUser().isLoggedSuccess());
+
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
 
     @AfterMethod(alwaysRun = true)
